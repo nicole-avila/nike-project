@@ -1,6 +1,6 @@
-const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImage }) => {
+const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
   const handleClick = () => {
-    if (bigShoeImage !== imgURL.bigShoe) {
+    if (bigShoeImg !== imgURL.bigShoe) {
       //om bigShoeImgage INTE är lika med imgURL.bigShoe, I det fallet byter vi BILD med changeBigShoeImage med någon av bilderna från imgURL.bigShoe
       changeBigShoeImage(imgURL.bigShoe);
     }
@@ -9,11 +9,13 @@ const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImage }) => {
   return (
     <div
       className={`border-2 rounded-x1 ${
-        bigShoeImage === imgURL ? "border-coral-red" : "border-transparent"
+        bigShoeImg === imgURL.bigShoe
+          ? "border-coral-red"
+          : "border-transparent"
       } cursor-pointer max-sm:flex-1`}
       onClick={handleClick}
     >
-      <div>
+      <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
         <img
           src={imgURL.thumbnail}
           alt="shoe collection"
