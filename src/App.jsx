@@ -23,7 +23,7 @@ const App = () => (
         textTransform: "capitalize",
       }}
     >
-      ...under process...
+      ...under process......
     </h1>
     {/* <section className="padding">
 <PopularProducts/>
