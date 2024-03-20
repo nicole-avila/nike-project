@@ -20,17 +20,18 @@ const Nav = () => {
             alt="nike logo in orange color"
             width={130}
             height={29}
+            className="m-0 w-[129px] h-[29px]"
           />
         </a>
 
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-          {navLinks.map((link, index) => (
-            <li key={index}>
+          {navLinks.map((item) => (
+            <li key={item.label}>
               <a
-                href={link.label}
-                className="font-montserrat leading-normal text-lg text-slate-grey"
+                href={item.href}
+                className="font-montserrat leading-normal text-lg text-slate-gray"
               >
-                {link.label}
+                {item.label}
               </a>
             </li>
           ))}
