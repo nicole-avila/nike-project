@@ -1,9 +1,10 @@
-import { arrowRight } from "../assets/icons";
-import { shoes, statistics } from "../constants";
-import Button from "../components/Button";
-import bigShoe1 from "../assets/images/big-shoe1.png";
 import ShoeCard from "../components/ShoeCard";
+import Button from "../components/Button";
+
+import { shoes, statistics } from "../constants";
 import { useState } from "react";
+import { bigShoe1 } from "../assets/images";
+import { arrowRight } from "../assets/icons";
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
@@ -47,7 +48,7 @@ const Hero = () => {
       <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
         {" "}
         <img
-          src={bigShoe1}
+          src={bigShoeImg}
           alt="shoe colletion"
           width={610}
           height={502}
