@@ -16,13 +16,6 @@ const App = () => (
     <section className="xl:padding-l wide:padding-r padding-b">
       <Hero />
     </section>
-    <h1
-      style={{
-        fontSize: "2rem",
-        color: "hotpink",
-        textTransform: "capitalize",
-      }}
-    ></h1>
     <section className="padding">
       <PopularProducts />
     </section>
