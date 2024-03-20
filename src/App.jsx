@@ -22,9 +22,7 @@ const App = () => (
         color: "hotpink",
         textTransform: "capitalize",
       }}
-    >
-      ...under process...
-    </h1>
+    ></h1>
     {/* <section className="padding">
 <PopularProducts/>
 </section>
